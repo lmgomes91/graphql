@@ -1,6 +1,6 @@
 # Node.Js and GraphQL
 
-    This aplication was created using typescript, mode.Js, graphql-yoga, docker and postgres
+    This aplication was created using typescript, node.Js, graphql-yoga, docker and postgres
 
 ## How to run
 
