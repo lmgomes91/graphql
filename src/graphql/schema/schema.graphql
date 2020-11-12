@@ -1,0 +1,40 @@
+type Driver {
+  id: ID!
+  name: String!
+  age: Int!
+  date_creation: String!
+}
+
+type Ride {
+  id: ID!
+  from: String!
+  to: String!
+  value: Int!
+  date_creation: String!
+}
+
+type Query {
+  #  Driver Queries
+  retrieveDriversByAttribute(attr: String, value: String): [Driver!]
+  retrieveDriverById(id: Int!): Driver
+
+  # Ride Queries
+  retrieveRidesByAttribute(attr: String, value: String): [Ride!]
+  retrieveRideById(id: Int!): Ride
+}
+
+type Mutation {
+  # Driver Mutations
+  createDriver(name: String!, age: Int!): Driver
+  updateDriver(id: Int!, age: Int, name: String): Driver
+
+  # Ride Mutations
+  createRide(id_driver: Int!, from: String!, to: String!, value: Int!): Ride
+  updateRide(
+    id: Int!
+    id_driver: Int
+    from: String
+    to: String
+    value: Int
+  ): Ride
+}
