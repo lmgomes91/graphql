@@ -1,4 +1,4 @@
-# Oowlish Challenge - Node.Js
+# Node.Js and GraphQL
 
     This aplication was created using typescript, mode.Js, graphql-yoga, docker and postgres
 
